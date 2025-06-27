@@ -21,11 +21,9 @@ import ConfirmModal from "../../components/ui/modal/ConfirmModal";
 export default function Estudios(){
     const {user, empresa} = useAuth();
     const [estudios, setEstudios] = useState<PageResponse<EstudioDto> | null>(null);
-    const [selectedEstudio, setSelectedEstudio] = useState<EstudioDto | null>(null);
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
     const [mostrarFormulario, setMostrarFormulario] = useState(false);
     const [loading, setLoading] = useState(false);
-    const [errorLoad, setErrorLoad] = useState<string | null>(null);
     const [showConfirmModal, setShowConfirmModal] = useState(false);
     const [confirmAction, setConfirmAction] = useState<() => void>(() => () => {});
 
@@ -42,7 +40,6 @@ export default function Estudios(){
     const[query, setQuery] = useState("");
 
     const handleOptions = async (type: "descargar" | "eliminar", estudio: EstudioDto) => {
-        setSelectedEstudio(estudio);
         setErrorMessage(null);
         if(type === "descargar"){
             window.open(estudio.url, "_blank");
@@ -78,7 +75,7 @@ export default function Estudios(){
             }
         }
         catch(err){
-            setErrorLoad("Ocurrió un error al cargar los estudios clínicos");
+            console.log("Ocurrió un error al cargar los estudios clínicos");
             console.log((err as Error).message);
         }finally{
             setLoading(false);
@@ -98,7 +95,7 @@ export default function Estudios(){
             }
         }
         catch(err){
-            setErrorLoad("Ocurrió un error al cargar los estudios clínicos");
+            console.log("Ocurrió un error al cargar los estudios clínicos");
             console.log((err as Error).message);
         }finally{
             setLoading(false);

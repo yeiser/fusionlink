@@ -39,14 +39,10 @@ interface CreateEstudioFormProps{
 }
 
 export default function CreateEstudioForm({
-    tipoIdentificacion,
     identificacion,
     nombrePaciente,
     nombreEstudio,
-    fechaEstudio,
-    fechaReporte,
     usuarioSubida,
-    fileDto,
     metadatos,
     errorMessage,
     loading,
