@@ -26,7 +26,7 @@ export default function LandingPage() {
         const repo = new PlanRepositoryImpl(api);
         const getListPlanesUseCase = new GetListPlanesUseCase(repo);
 
-        const response = await getListPlanesUseCase.execute();
+        const response = [...await getListPlanesUseCase.execute()].sort((a, b) => a.precioMensual - b.precioMensual);
         if(response){
             setPlanes(response);
         }
