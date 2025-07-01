@@ -71,7 +71,7 @@ export default function PricingPlans({planes}: PricingPlansProps) {
               <button
                 className={`w-full rounded-md py-3 text-center text-sm font-semibold bg-gray-900 text-white hover:bg-gray-800`}
               >
-                Choose Starter
+                Comprar {plan.nombre}
               </button>
             </div>
           ))}

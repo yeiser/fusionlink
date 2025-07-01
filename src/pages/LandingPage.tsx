@@ -100,6 +100,14 @@ export default function LandingPage() {
                   </li>
                   <li className="relative group">
                     <a
+                      href="#politicas"
+                      className="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                    >
+                      Políticas de datos
+                    </a>
+                  </li>
+                  <li className="relative group">
+                    <a
                       href="#contacto"
                       className="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
@@ -1989,6 +1997,150 @@ export default function LandingPage() {
         <PricingPlans planes={planes}/>
       </div>
     </section>
+    <section className="bg-gray-1 pb-8 pt-10 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]" id="politicas">
+      <div className="container mx-auto px-6">
+        <div data-aos-delay="200" data-aos="fade-in-out">
+          <div className="flex flex-wrap items-center -mx-4">
+            <div className="w-full px-4 lg:w-1/2">
+            <div className="mb-12 max-w-[540px] lg:mb-0">
+              <h1 className="text-4xl font-bold mb-6 text-center text-primary">Política de Tratamiento de Datos Personales</h1>
+              <p className="text-sm text-gray-500 text-center mb-12">Última actualización: 27/06/2025</p>
+              <div className="space-y-8">
+              <div>
+                <p className="mt-2 text-gray-700 text-justify">En cumplimiento de lo establecido en la Ley 1581 de 2012, el Decreto 1377 de 2013 y demás normas que regulan la protección de datos personales en Colombia, FusionLink S.A.S. adopta la presente Política de Tratamiento de Datos Personales para garantizar la protección de la información de sus usuarios, clientes y titulares de datos personales.</p>
+              </div>
+              <div>
+                <p className="mt-2 text-gray-700 text-justify">Esta política aplica al tratamiento de los datos personales recolectados por FusionLink a través de plataformas digitales, formularios, procesos comerciales y otros medios legítimos.</p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold text-gray-900">Finalidades del tratamiento</h2>
+                <ul className="mt-2 text-gray-700 list-disc list-inside space-y-1">
+                  <li>Gestión de turnos y resultados clínicos.</li>
+                  <li>Notificaciones transaccionales.</li>
+                  <li>Administración de usuarios y sedes.</li>
+                  <li>Soporte técnico y análisis de uso.</li>
+                  <li>Comunicación comercial previa autorización.</li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold text-gray-900">Tipos de datos recolectados</h2>
+                <ul className="mt-2 text-gray-700 list-disc list-inside space-y-1">
+                  <li>Datos de identificación: nombre, documento, correo, teléfono.</li>
+                  <li>Datos de ubicación y de la IPS.</li>
+                  <li>Datos clínicos mínimos para resultados.</li>
+                  <li>Datos técnicos: IP, navegador, logs de acceso.</li>
+                </ul>
+              </div>
+              <div className="text-justify">
+                <h2 className="text-2xl font-semibold text-gray-900">Derechos del titular</h2>
+                <p className="mt-2 text-gray-700">El titular puede conocer, actualizar, rectificar o eliminar sus datos; solicitar prueba de autorización y ser informado sobre su uso, conforme a la Ley 1581 de 2012.</p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-semibold text-gray-900">Medidas de seguridad</h2>
+                <ul className="mt-2 text-gray-700 list-disc list-inside space-y-1">
+                  <li>Encriptación de datos sensibles.</li>
+                  <li>Control de accesos por roles.</li>
+                  <li>Backups y recuperación ante desastres.</li>
+                  <li>Alojamiento seguro en la nube.</li>
+                </ul>
+              </div>
+
+              <div className="text-justify">
+                <h2 className="text-2xl font-semibold text-gray-900">Transferencia y transmisión</h2>
+                <p className="mt-2 text-gray-700">FusionLink podrá transmitir o transferir datos con autorización previa, garantizando condiciones de seguridad y legalidad, tanto en Colombia como en el exterior.</p>
+              </div>
+              <div className="text-justify">
+                <h2 className="text-2xl font-semibold text-gray-900">Vigencia y modificaciones</h2>
+                <p className="mt-2 text-gray-700">Esta política entra en vigencia desde su publicación. FusionLink puede actualizarla en cualquier momento, notificando los cambios por canales oficiales.</p>
+              </div>
+
+              <div className="text-justify">
+                <h2 className="text-2xl font-semibold text-gray-900">Aceptación</h2>
+                <p className="mt-2 text-gray-700">El uso de nuestros servicios implica el conocimiento y aceptación de esta política.</p>
+              </div>
+              </div>
+            </div>
+            </div>
+            <div className="w-full px-4 lg:w-1/2">
+            <div className="mb-12 max-w-[540px] lg:mb-0">
+              <h1 className="text-4xl font-bold mb-6 text-center text-primary">Política de privacidad</h1>
+              <p className="text-sm text-gray-500 text-center mb-12">Última actualización: 01/07/2025</p>
+              <div className="space-y-8">
+                <div className="text-justify">
+                  <h2 className="text-2xl font-semibold text-gray-900">¿Qué información recopilamos?</h2>
+                  <p className="mt-2 text-gray-700">
+                    Recopilamos datos personales como nombre, correo electrónico, número de documento, teléfono, nombre de la IPS y, en algunos casos, datos clínicos mínimos necesarios para la entrega de resultados de laboratorio y gestión de turnos.
+                  </p>
+                </div>
+                <div>
+                  <h2 className="text-2xl font-semibold text-gray-900">¿Cómo usamos tu información?</h2>
+                  <ul className="mt-2 text-gray-700 list-disc list-inside space-y-1">
+                    <li>Para crear y gestionar tu cuenta de usuario.</li>
+                    <li>Para enviar notificaciones sobre turnos, resultados o soporte.</li>
+                    <li>Para mejorar nuestros servicios mediante análisis estadísticos.</li>
+                    <li>Para cumplir con obligaciones legales y contractuales con IPS.</li>
+                  </ul>
+                </div>
+                <div className="text-justify">
+                  <h2 className="text-2xl font-semibold text-gray-900">¿Compartimos tu información?</h2>
+                  <p className="mt-2 text-gray-700">
+                    No vendemos ni compartimos tu información personal con terceros sin tu consentimiento, salvo cuando sea necesario para la prestación del servicio o por obligación legal.
+                  </p>
+                </div>
+
+                <div className="text-justify">
+                  <h2 className="text-2xl font-semibold text-gray-900">Cookies y tecnologías similares</h2>
+                  <p className="mt-2 text-gray-700">
+                    Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Puedes deshabilitarlas en tu navegador, pero algunas funciones podrían no estar disponibles.
+                  </p>
+                </div>
+
+                <div className="text-justify">
+                  <h2 className="text-2xl font-semibold text-gray-900">Seguridad de la información</h2>
+                  <p className="mt-2 text-gray-700">
+                    Implementamos diversas medidas técnicas, administrativas y organizativas para garantizar la confidencialidad, integridad y disponibilidad de los datos personales que tratamos. Entre ellas se encuentran:
+                  </p>
+                  <ul className="mt-4 text-gray-700 list-disc list-inside space-y-1">
+                    <li>Encriptación de datos sensibles tanto en tránsito como en reposo.</li>
+                    <li>Control de accesos por roles y autenticación segura de usuarios.</li>
+                    <li>Backups automáticos y estrategias de recuperación ante desastres.</li>
+                    <li>Monitoreo continuo de la infraestructura y prevención de accesos no autorizados.</li>
+                    <li>Actualizaciones de seguridad periódicas en la plataforma.</li>
+                    <li>Auditorías internas y revisiones de cumplimiento.</li>
+                  </ul>
+                  <p className="mt-4 text-gray-700">
+                    Aunque tomamos medidas razonables y actualizadas, ningún sistema es completamente infalible. Por eso, en caso de detectar vulneraciones o incidentes de seguridad, contamos con protocolos establecidos para su contención, análisis y notificación oportuna a los usuarios y autoridades competentes si aplica.
+                  </p>
+                </div>
+
+                <div className="text-justify">
+                  <h2 className="text-2xl font-semibold text-gray-900">Tus derechos</h2>
+                  <p className="mt-2 text-gray-700">
+                    Puedes acceder, actualizar o eliminar tu información personal en cualquier momento escribiéndonos a <strong>datos@fusionlink.com</strong>.
+                  </p>
+                </div>
+
+                <div className="text-justify">
+                  <h2 className="text-2xl font-semibold text-gray-900">Cambios a esta política</h2>
+                  <p className="mt-2 text-gray-700">
+                    Nos reservamos el derecho de modificar esta política en cualquier momento. Te notificaremos sobre los cambios importantes en nuestro sitio web.
+                  </p>
+                </div>
+
+                <div className="text-justify">
+                  <h2 className="text-2xl font-semibold text-gray-900">Contacto</h2>
+                  <p className="mt-2 text-gray-700">
+                    Si tienes preguntas sobre esta política, contáctanos en <strong>contacto@fusionlink.com</strong> o mediante nuestro formulario web.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contacto" className="relative py-20 md:py-[120px]">
       <div className="absolute top-0 left-0 w-full h-full -z-1 bg-white"></div>
       <div
@@ -2242,7 +2394,7 @@ export default function LandingPage() {
                     href="javascript:void(0)"
                     className="inline-block mb-3 text-base text-gray-300 hover:text-white"
                   >
-                    Políticas de privacidad y protección de datos
+                    Política de tratamiento de datos personales
                   </a>
                 </li>
                 <li>
@@ -2250,7 +2402,7 @@ export default function LandingPage() {
                     href="javascript:void(0)"
                     className="inline-block mb-3 text-base text-gray-300 hover:text-white"
                   >
-                    Políticas de seguridad de la información
+                    Política de seguridad de la información
                   </a>
                 </li>
                 <li>
