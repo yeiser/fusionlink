@@ -16,11 +16,10 @@ export default function SignUp() {
   const handleRegister = async (tipoIdentificacion: string, identificacion: string, email: string, nombres: string, apellidos: string, clave: string, telefono: string) => {
       const api = new AuthApi();
       const repo = new AuthRepositoryImpl(api);
-      const loginUseCase = new RegisterUseCase(repo);
-      
+      const registerUseCase = new RegisterUseCase(repo);
   
       try {
-        const response = await loginUseCase.execute({ tipoIdentificacion, identificacion, email, nombres, apellidos, clave, telefono });
+        const response = await registerUseCase.execute({ tipoIdentificacion, identificacion, email, nombres, apellidos, clave, telefono });
         if(response.success){
           navigate("/status", {
             state: {
@@ -31,8 +30,8 @@ export default function SignUp() {
             }
           });
         }
-      } catch (err) {
-        setRegisterError((err as Error).message || "Ocurrió un error al registrarse");
+      } catch (err: any) {
+        setRegisterError((err as Error).message);
       }
     };
   

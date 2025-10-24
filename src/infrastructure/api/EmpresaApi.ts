@@ -11,13 +11,15 @@ export class EmpresaApi {
     try{
         const response = await api.get<ApiResponse<EmpresaDto>>(`/Empresas/GetEmpresaByCodigo/${codigo}`);
         if (!response.data?.success) {
-            throw new Error(response.data.message || "Ha ocurrido un error en el servidor");
+            console.log(response.data.message || "Ha ocurrido un error en el servidor");
+            throw new Error("Ha ocurrido un error en el servidor");
         }
         return response.data.data;
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error desconocido al consultar la empresa");
+        console.log(mensaje || "Error desconocido al consultar la empresa");
+        throw new Error("Error desconocido al consultar la empresa");
     }
   }
 
@@ -25,13 +27,15 @@ export class EmpresaApi {
     try{
         const response = await api.post<ApiResponse<EmpresaDto>>(`/Empresas/Create`, data);
         if (!response.data?.success) {
-            throw new Error(response.data?.message || "Ha ocurrido un error en el servidor");
+            console.log(response.data?.message || "Ha ocurrido un error en el servidor");
+            throw new Error("Ha ocurrido un error en el servidor");
         }
         return response.data;
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error desconocido al crear la empresa");
+        console.log(mensaje || "Error desconocido al crear la empresa")
+        throw new Error("Error desconocido al crear la empresa");
     }
   }
 
@@ -45,7 +49,8 @@ export class EmpresaApi {
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error desconocido al subir la imagen");
+        console.log(mensaje || "Error desconocido al subir la imagen");
+        throw new Error("Error desconocido al subir la imagen");
     }
   }
 
@@ -53,13 +58,15 @@ export class EmpresaApi {
     try{
         const response = await api.put<ApiResponse<EmpresaDto>>(`/Empresas/Update`, data);
         if (!response.data?.success) {
-            throw new Error(response.data?.message || "Ha ocurrido un error en el servidor");
+            console.log(response.data?.message || "Ha ocurrido un error en el servidor");
+            throw new Error("Ha ocurrido un error en el servidor");
         }
         return response.data;
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error desconocido al editar la empresa");
+        console.log(mensaje || "Error desconocido al editar la empresa");
+        throw new Error("Error desconocido al editar la empresa");
     }
   }
 }

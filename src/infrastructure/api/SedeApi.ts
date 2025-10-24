@@ -10,13 +10,15 @@ export class SedeApi {
     try{
         const response = await api.get<ApiResponse<SedeDto[]>>(`/Sedes/GetList/${codigo}`);
         if (!response.data?.success) {
-            throw new Error(response.data.message || "Ha ocurrido un error en el servidor");
+            console.log(response.data.message || "Ha ocurrido un error en el servidor");
+            throw new Error("Ha ocurrido un error en el servidor");
         }
         return response.data.data;
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error al consultar las sedes");
+        console.log(mensaje || "Error al consultar las sedes");
+        throw new Error("Error al consultar las sedes");
     }
   }
 
@@ -24,13 +26,15 @@ export class SedeApi {
     try{
         const response = await api.post<ApiResponse<SedeDto>>(`/Sedes/Create`, data);
         if (!response.data?.success) {
-            throw new Error(response.data?.message || "Ha ocurrido un error en el servidor");
+            console.log(response.data?.message || "Ha ocurrido un error en el servidor");
+            throw new Error("Ha ocurrido un error en el servidor");
         }
         return response.data;
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error desconocido al crear la sede");
+        console.log(mensaje || "Error desconocido al crear la sede");
+        throw new Error("Error desconocido al crear la sede");
     }
   }
 
@@ -38,13 +42,15 @@ export class SedeApi {
     try{
         const response = await api.put<ApiResponse<SedeDto>>(`/Sedes/Update`, data);
         if (!response.data?.success) {
-            throw new Error(response.data?.message || "Ha ocurrido un error en el servidor");
+            console.log(response.data?.message || "Ha ocurrido un error en el servidor");
+            throw new Error("Ha ocurrido un error en el servidor");
         }
         return response.data;
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error desconocido al actualizar la sede");
+        console.log(mensaje || "Error desconocido al actualizar la sede");
+        throw new Error("Error desconocido al actualizar la sede");
     }
   }
 }

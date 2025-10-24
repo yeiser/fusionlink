@@ -14,13 +14,15 @@ export class EstudiosApi {
 
         const response = await api.get<ApiResponse<PageResponse<EstudioDto>>>(`/ReporteEstudios/GetListByEmpresa?${params.toString()}`);
         if (!response.data?.success) {
-            throw new Error(response.data.message || "Ha ocurrido un error en el servidor");
+            console.log(response.data.message || "Ha ocurrido un error en el servidor")
+            throw new Error("Ha ocurrido un error en el servidor");
         }
         return response.data.data;
     }
     catch(error: any){
         const mensaje = error?.response?.data?.message || error.message;
-        throw new Error(mensaje || "Error al consultar los estudios");
+        console.log(mensaje || "Error al consultar los estudios")
+        throw new Error("Error al consultar los estudios");
     }
   }
 

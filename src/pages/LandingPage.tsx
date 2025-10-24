@@ -2391,7 +2391,7 @@ export default function LandingPage() {
               <ul>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#politicas"
                     className="inline-block mb-3 text-base text-gray-300 hover:text-white"
                   >
                     Política de tratamiento de datos personales
@@ -2399,10 +2399,10 @@ export default function LandingPage() {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#politicas"
                     className="inline-block mb-3 text-base text-gray-300 hover:text-white"
                   >
-                    Política de seguridad de la información
+                    Política de privacidad
                   </a>
                 </li>
                 <li>
