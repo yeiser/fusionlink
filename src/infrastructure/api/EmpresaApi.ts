@@ -11,8 +11,7 @@ export class EmpresaApi {
     try{
         const response = await api.get<ApiResponse<EmpresaDto>>(`/Empresas/GetEmpresaByCodigo/${codigo}`);
         if (!response.data?.success) {
-            console.log(response.data.message || "Ha ocurrido un error en el servidor");
-            throw new Error("Ha ocurrido un error en el servidor");
+            throw new Error(response.data.message || "Ha ocurrido un error en el servidor");
         }
         return response.data.data;
     }
