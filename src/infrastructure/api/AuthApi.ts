@@ -18,7 +18,7 @@ export class AuthApi {
 
     const result: ApiResponse<UserDto> = await response.json();
 
-    if (response.status !== 500) {
+    if (response.status === 500) {
       throw new Error(result.message || "Ha ocurrido un error en el servidor");
     }else if(response.status === 500){
       console.log(result.message || "Ha ocurrido un error en el servidor");
@@ -37,7 +37,7 @@ export class AuthApi {
 
     const result: ApiResponse<any> = await response.json();
 
-    if (response.status !== 500) {
+    if (response.status === 500) {
       throw new Error(result.message || "Ha ocurrido un error en el servidor");
     }else if(response.status === 500){
       console.log(result.message || "Ha ocurrido un error en el servidor");
@@ -56,7 +56,7 @@ export class AuthApi {
 
     const result: ApiResponse<any> = await response.json();
 
-    if (response.status !== 500) {
+    if (response.status === 500) {
       throw new Error(result.message || "Ha ocurrido un error en el servidor");
     }else if(response.status === 500){
       console.log(result.message || "Ha ocurrido un error en el servidor");
@@ -75,7 +75,7 @@ export class AuthApi {
 
     const result: ApiResponse<any> = await response.json();
 
-    if (response.status !== 500) {
+    if (response.status === 500) {
       throw new Error(result.message || "Ha ocurrido un error en el servidor");
     }else if(response.status === 500){
       console.log(result.message || "Ha ocurrido un error en el servidor");
@@ -93,7 +93,7 @@ export class AuthApi {
 
     const result: ApiResponse<any> = await response.json();
 
-    if (response.status !== 500) {
+    if (response.status === 500) {
       throw new Error(result.message || "Ha ocurrido un error en el servidor");
     }else if(response.status === 500){
       console.log(result.message || "Ha ocurrido un error en el servidor");
@@ -109,7 +109,7 @@ export class AuthApi {
 
     const result: ApiResponse<any> = await response.json();
 
-    if (response.status !== 500) {
+    if (response.status === 500) {
       throw new Error(result.message || "Ha ocurrido un error en el servidor");
     }else if(response.status === 500){
       console.log(result.message || "Ha ocurrido un error en el servidor");

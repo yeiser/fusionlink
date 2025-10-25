@@ -19,6 +19,7 @@ export default function SignUp() {
       const registerUseCase = new RegisterUseCase(repo);
   
       try {
+        debugger
         const response = await registerUseCase.execute({ tipoIdentificacion, identificacion, email, nombres, apellidos, clave, telefono });
         if(response.success){
           navigate("/status", {
